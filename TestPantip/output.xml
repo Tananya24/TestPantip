@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.12.7 on win32)" generated="2024-11-06T13:47:51.682403" rpa="false" schemaversion="5">
+<suite id="s1" name="TestPantip" source="D:\Users\Joy\Desktop\TestPantip\TestPantip.robot">
+<kw name="Log To Console" owner="BuiltIn" type="SETUP">
+<arg>Hello World</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-11-06T13:47:51.925884" elapsed="0.001935"/>
+</kw>
+<test id="s1-t1" name="กดปุ่มเเท็ก" line="24">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2024-11-06T13:47:51.928537" level="INFO">Opening browser 'gc' to base url 'https://pantip.com/'.</msg>
+<arg>https://pantip.com/</arg>
+<arg>gc</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-06T13:47:51.928537" elapsed="8.664946"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${TESTMESSAGE}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-11-06T13:48:00.594483" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-06T13:48:00.595481" level="INFO">Clicking element '//*[@id="__next"]/div/div/div/div[1]/div/ul[2]/a[3]/li'.</msg>
+<arg>//*[@id="__next"]/div/div/div/div[1]/div/ul[2]/a[3]/li</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-06T13:48:00.594483" elapsed="0.145161"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-06T13:48:00.740645" level="INFO">Clicking element '//*[@id="__next"]/div/div/div/div[7]/div/div/div[1]/div[1]/a[2]'.</msg>
+<arg>//*[@id="__next"]/div/div/div/div[7]/div/div/div[1]/div[1]/a[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-06T13:48:00.739644" elapsed="2.148299"/>
+</kw>
+<kw name="Location Should Be" owner="SeleniumLibrary">
+<msg time="2024-11-06T13:48:02.895413" level="INFO">Current location is 'https://pantip.com/communities/tag'.</msg>
+<arg>https://pantip.com/communities/tag</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<status status="PASS" start="2024-11-06T13:48:02.887943" elapsed="0.007470"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-06T13:48:07.897476" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-06T13:48:02.896423" elapsed="5.001053"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-11-06T13:48:07.897476" elapsed="2.202886"/>
+</kw>
+<status status="PASS" start="2024-11-06T13:47:51.927819" elapsed="18.172543"/>
+</test>
+<kw name="Log To Console" owner="BuiltIn" type="TEARDOWN">
+<arg>Goodbye!!</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-11-06T13:48:10.102358" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-11-06T13:47:51.684629" elapsed="18.417729"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TestPantip">TestPantip</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
